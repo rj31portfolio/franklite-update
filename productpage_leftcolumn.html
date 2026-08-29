@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franklite – Baby Cars, Bikes & More!</title>
+    <link rel="icon" href="image/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link href="style.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+   .product-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .product-price {
+      font-size: 24px;
+      color: #000;
+    }
+    .thumbnail-img {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    .color-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .sidebar-product {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .policy-box {
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .payment-icons img {
+      height: 24px;
+      margin-right: 5px;
+    }
+    .tab-content {
+      font-size: 14px;
+    }
+    .tab-buttons .btn {
+      border-radius: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+    <!-- header section start -->
+    <div class="container header-1 d-flex flex-wrap ">
+        <nav class="navbar col-lg-5 col-md-12">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="image/logo-gif.gif" alt="logo" class="w-50">
+                </a>
+            </div>
+        </nav>
+        <div class="col-lg-6 col-md-12 left header-left">
+            <div class="box-2 d-flex justify-content-between align-items-center h-100 ">
+                <div class="content d-flex ">
+                    <div class="img-box mx-3 h-100">
+                        <img src="image/truck.png">
+                    </div>
+                    <div class="content-box"><span class="fw-bold"> Free Worldwide Delivery</span> <br> Worldwide
+                        delivery at no charge </div>
+                </div>
+                <div class="content d-flex ">
+                    <div class="img-box mx-3 h-100">
+                        <img src="image/gift.png">
+                    </div>
+                    <div class="content-box"><span class="fw-bold">Free Gift Voucher </span> <br> Enjoy a free gift
+                        voucher</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid header-2" data-aos="zoom-in-up">
+        <nav class="navbar navbar-expand-lg container">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#gallery">Gallery</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- Main Download Button -->
+                <a href="pdf/PREM SONY.pdf" class="btn main-btn fir-btn text-white" download>
+                    <i class="fa fa-download"></i> Download PDF
+                </a>
+
+                <!-- Icon-Only Download Button -->
+                <a href="pdf/PREM SONY.pdf" class="btn main-btn sec-btn" download>
+                    <i class="fa fa-download"></i>
+                </a>
+
+            </div>
+        </nav>
+
+    </div>
+    <!-- header section end -->
+   <div class="container my-5">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-lg-3">
+      <h5>WOMEN</h5>
+      <ul class="list-unstyled">
+        <li><a href="#">Tops</a></li>
+        <li><a href="#">Dresses</a></li>
+        <li><a href="#">Sarees</a></li>
+      </ul>
+
+      <h6 class="mt-4">NEW PRODUCTS</h6>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Pellentesque et pharetra <br><del>$50.00</del> <strong>$45.00</strong>
+      </div>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Vis feugiat delenti <br><del>$22.00</del> <strong>$21.85</strong>
+      </div>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Curabitur laoreet luctus <br> <strong>$50.00</strong>
+      </div>
+      <div class="sidebar-product">
+        <img src="https://via.placeholder.com/60" class="me-2" alt="">
+        Aliquam fringilla justo <br> <strong>$24.00</strong>
+      </div>
+    </div>
+
+    <!-- Product Content -->
+    <div class="col-lg-9">
+      <div class="row">
+        <div class="col-md-6 text-center">
+  <!-- Main Image -->
+  <img id="mainImage" src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid mb-3" alt="Main Image" style="max-height: 400px; object-fit: contain;">
+
+  <!-- Thumbnails -->
+  <div class="d-flex justify-content-center gap-2">
+    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" class="thumbnail-img" style="height: 60px; cursor: pointer;" onclick="changeImage(this)">
+    <img src="https://via.placeholder.com/60" class="thumbnail-img" style="height: 60px; cursor: pointer;" onclick="changeImage(this)">
+    <img src="https://via.placeholder.com/60" class="thumbnail-img" style="height: 60px; cursor: pointer;" onclick="changeImage(this)">
+    <img src="https://via.placeholder.com/60" class="thumbnail-img" style="height: 60px; cursor: pointer;" onclick="changeImage(this)">
+  </div>
+  </div>
+
+        <div class="col-md-6">
+          <div class="product-title">Aroma Mocha</div>
+          <p class="text-muted">Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat.</p>
+
+          <p>
+            ⭐⭐⭐⭐☆
+            <a href="#">Read Reviews</a> | <a href="#">Write Review</a>
+          </p>
+
+          <div class="mb-2">
+            <label for="size">Size</label>
+            <select id="size" class="form-select w-50">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+
+          <div class="mb-2">
+            <label>Color</label><br>
+            <span class="color-dot" style="background-color: #000;"></span>
+            <span class="color-dot" style="background-color: #f80;"></span>
+            <span class="color-dot" style="background-color: #f8c;"></span>
+          </div>
+
+          <div class="product-price mb-2">$50.00</div>
+
+          <div class="input-group w-50 mb-3">
+            <button class="btn btn-outline-secondary">-</button>
+            <input type="text" class="form-control text-center" value="1">
+            <button class="btn btn-outline-secondary">+</button>
+          </div>
+
+          <button class="btn btn-dark mb-2">Add to Cart</button>
+          <p class="text-success">✔ In Stock</p>
+
+          <div class="mb-3">
+            <span>Share:</span>
+            <a href="#" class="ms-2"><img src="https://img.icons8.com/color/24/facebook.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/24/google-plus.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/color/24/twitter--v1.png"/></a>
+          </div>
+
+          <div class="payment-icons mb-3">
+            <img src="https://img.icons8.com/color/48/mastercard-logo.png"/>
+            <img src="https://img.icons8.com/color/48/visa.png"/>
+            <img src="https://img.icons8.com/color/48/paypal.png"/>
+          </div>
+
+          <div class="policy-box">🔒 Security Policy (Edit With Customer Reassurance Module)</div>
+          <div class="policy-box">🚚 Delivery Policy (Edit With Customer Reassurance Module)</div>
+          <div class="policy-box">🔄 Return Policy (Edit With Customer Reassurance Module)</div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="mt-4">
+        <ul class="nav nav-tabs tab-buttons">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#desc">DESCRIPTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#details">PRODUCT DETAILS</a>
+          </li>
+         <!-- <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#reviews">REVIEWS</a>
+          </li> -->
+        </ul>
+        <div class="tab-content p-3 border border-top-0">
+          <div id="desc" class="tab-pane fade show active">
+            Fashion has been creating well-designed collections since 2010. The brand offers feminine designs.
+          </div>
+          <div id="details" class="tab-pane fade">
+            Soft, stretchy material. Made in Italy. Hand wash only. Available in multiple sizes.
+          </div>
+          <div id="reviews" class="tab-pane fade">
+            No reviews yet. Be the first to review!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+       <!-- footer section start -->
+
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+            <div class="container" data-aos="fade-up">
+                <div class="row d-flex justify-content-between" data-aos="fade-right">
+
+                    <div data-aos="zoom-in" data-aos-delay="100" class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <img class="img-fluid w-100" src="image/logo-gif.gif" alt="">
+                            <br>
+                            <p class="">Explore fun and safe ride-on toys like Bazuka, City Bike, Duke Bike, and more.
+                                Designed for toddlers to enjoy comfort, adventure, and endless playtime moments.</p>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in" data-aos-delay="300" class="col-lg-2 col-md-6 footer-links">
+                        <h4 class="fw-bold">Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a class href='index.html'>Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#about">About us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#product">Product</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#gallery">Gallery</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="zoom-in" data-aos-delay="400" class="col-lg-2 col-md-6 footer-links">
+                        <h4 class="fw-bold">Best Products</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Bazuka</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#">City Bike</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Duke Bike</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Minni Boomer</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Tricycle</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="" href="#">Panther</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div data-aos="zoom-in" data-aos-delay="500"
+                        class="col-lg-3 col-md-6 footer-newsletter footer-links">
+                        <h4 class="">Contact Us</h4>
+                        <p class="text-dark  footer-dif">
+                            <span style="color:#403e3e; font-size: 16px;">I-241, DSIIDC Industrial Area, Sector 5,
+                                Bawana, Delhi, 110039 <br><br></span>
+
+                            <strong class="footer-dif" style="font-size: 16px;">Phone:</strong> <a
+                                style="text-decoration: none; color: #403e3e; font-size: 16px;"
+                                href="tel:+919910320920">+91 9910320920</a><br>
+                            <strong class="footer-dif" style="font-size: 16px;">Email:</strong> <a
+                                style="text-decoration: none; color: #403e3e; font-size: 16px;"
+                                href="mailto:info@franklite.in" class="__cf_email__"
+                                data-cfemail="0f666169604f6a776e627f636a216c6062"> info@franklite.in</a><br>
+                        </p>
+                        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                            <a href="https://x.com/" target="_blank" class="twitter"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank" class="facebook"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="instagram"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://in.linkedin.com/" class="linkedin"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-legal text-center">
+            <div class="container-fluid">
+                <div class="row ">
+                    <hr>
+                    <div class="copyright col-md-6 col-12">
+                        &copy; Copyright <strong><span> Franklite</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits col-md-6 col-12">
+                        Designed by <a href="https://viraladsmedia.com/">ViralAdsMedia</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </footer><!-- End Footer -->
+    <div class="position-relative">
+        <a data-aos="zoom-in-right" data-aos-delay="100" class="call" href="tel:+919910320920"><i
+                class="fa-solid fa-phone"></i></a>
+        <a data-aos="zoom-in-up" data-aos-delay="300" class="whatsapp"
+            href="https://api.whatsapp.com/send/?phone=9910320920&text&type=phone_number&app_absent=0"><i
+                class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+
+
+
+
+    <!-- footer section end-->
+
+
+
+
+
+    <div class="container">
+        <!-- 
+        <div class="my-slider">
+            <div><img src="https://via.placeholder.com/600x300?text=Slide+1" alt="">dd</div>
+            <div><img src="https://via.placeholder.com/600x300?text=Slide+2" alt="">gg</div>
+            <div><img src="https://via.placeholder.com/600x300?text=Slide+3" alt="">cc</div>
+        </div> -->
+
+
+    </div>
+
+<script>
+  function changeImage(thumbnail) {
+    document.getElementById('mainImage').src = thumbnail.src;
+  }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+    <!-- <script href="script.js"></script> -->
+
+    <script>
+        $(document).ready(function () {
+            $('.sec-prod-slider').slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev "></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>',
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+
+        // testimonial section start
+        $(document).ready(function () {
+            $('.people').slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa-regular fa-circle-right"></i></button>',
+                nextArrow: '<button type="button" class="slick-next">dd</button>',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

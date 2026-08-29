@@ -1,0 +1,508 @@
+@media (max-width: 1199px) {
+    .feature-pills {
+        justify-content: flex-start;
+    }
+
+    .main-header-row {
+        align-items: flex-start;
+    }
+
+    .hero-slide-inner,
+    .about-panel,
+    .footer-grid,
+    .split-panel,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        min-height: 380px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-grid,
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reels-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-page-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid,
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .top-strip-inner,
+    .main-header-row,
+    .promo-banner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .top-strip-inner,
+    .main-header-row {
+        text-align: center;
+    }
+
+    .feature-pills,
+    .header-actions,
+    .header-cta {
+        justify-content: center;
+    }
+
+    .theme-nav {
+        position: static;
+    }
+
+    .theme-nav .container {
+        display: block;
+    }
+
+    .theme-nav .navbar-collapse {
+        width: 100%;
+        margin-top: 14px;
+        padding: 12px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-links {
+        padding: 10px 0;
+        justify-content: center;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .theme-nav .nav-link {
+        display: block;
+        text-align: center;
+    }
+
+    .hero-slide,
+    .hero-slide-inner {
+        min-height: auto;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(48px, 14vw, 82px);
+    }
+
+    .hero-slide-inner {
+        padding-top: 72px;
+        padding-bottom: 110px;
+        gap: 20px;
+    }
+
+    .hero-visual {
+        min-height: 340px;
+    }
+
+    .hero-visual-card {
+        max-width: 100%;
+        transform: none;
+    }
+
+    .about-copy,
+    .panel-copy,
+    .contact-card,
+    .contact-form-card {
+        padding: 24px;
+    }
+
+    .promo-banner img {
+        max-width: 100%;
+        margin-inline: auto;
+    }
+
+    .service-strip-grid {
+        justify-content: center;
+    }
+
+    .promo-banner {
+        display: flex;
+        text-align: center;
+    }
+
+    .promo-cta {
+        justify-items: center;
+    }
+
+    .hero-control.carousel-control-prev {
+        left: 20px;
+    }
+
+    .hero-control.carousel-control-next {
+        right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: min(100% - 24px, 100%);
+    }
+
+    .top-strip-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .top-strip-links a:not(:last-child)::after {
+        display: none;
+    }
+
+    .brand-wrap img {
+        width: 142px;
+    }
+
+    .feature-pill {
+        min-width: 100%;
+        justify-content: center;
+    }
+
+    .section-space {
+        padding: 26px 0 54px;
+    }
+
+    .hero-section {
+        padding-bottom: 32px;
+    }
+
+    .hero-slide-inner {
+        padding-top: 58px;
+        padding-bottom: 108px;
+    }
+
+    .hero-copy,
+    .about-copy,
+    .panel-copy,
+    .contact-card,
+    .contact-form-card,
+    .section-heading {
+        text-align: center;
+    }
+
+    .hero-copy p,
+    .about-copy p,
+    .panel-copy p,
+    .contact-card p,
+    .inner-hero p {
+        margin-inline: auto;
+    }
+
+    .hero-copy h1,
+    .inner-hero h1 {
+        line-height: 0.9;
+    }
+
+    .category-grid,
+    .product-grid,
+    .stats-grid,
+    .reels-grid,
+    .gallery-grid,
+    .gallery-page-grid,
+    .feature-grid,
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assurance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-badges,
+    .hero-actions,
+    .hero-mini-strip {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .theme-btn,
+    .ghost-btn,
+    .promo-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-card,
+    .category-card,
+    .review-card,
+    .feature-panel,
+    .assurance-card,
+    .stat-card {
+        padding: 18px;
+        border-radius: 22px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .category-card img {
+        height: 110px;
+    }
+
+    .price-row {
+        justify-content: center;
+    }
+
+    .review-card p {
+        min-height: auto;
+    }
+
+    .hero-control {
+        bottom: 28px;
+    }
+
+    .hero-control-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero-indicators {
+        bottom: 30px;
+    }
+
+    .gallery-grid img {
+        height: 220px;
+    }
+
+    .gallery-page-grid img,
+    .panel-media img,
+    .about-media img,
+    .promo-banner img {
+        min-height: 0;
+        height: 220px;
+    }
+
+    .review-meta,
+    .contact-list div {
+        justify-content: center;
+    }
+
+    .service-strip {
+        padding: 16px 0;
+    }
+
+    .service-strip-grid {
+        gap: 14px;
+    }
+
+    .site-footer {
+        padding-top: 42px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-grid {
+        text-align: center;
+    }
+
+    .floating-actions {
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .floating-actions a {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: calc(100% - 20px);
+    }
+
+    .top-strip {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .main-header {
+        padding: 14px 0;
+    }
+
+    .feature-pills {
+        gap: 12px;
+    }
+
+    .feature-pill {
+        align-items: flex-start;
+        text-align: left;
+        padding: 12px 14px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.76);
+    }
+
+    .theme-nav {
+        padding: 8px 0;
+    }
+
+    .theme-nav .navbar-collapse {
+        padding: 10px;
+        border-radius: 18px;
+    }
+
+    .theme-nav .nav-link {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .hero-slide-inner {
+        padding-top: 44px;
+        padding-bottom: 94px;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(38px, 13vw, 56px);
+    }
+
+    .hero-badges span,
+    .hero-mini-strip div {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .hero-visual {
+        min-height: 0;
+    }
+
+    .hero-visual-card {
+        padding: 10px;
+        border-radius: 24px;
+    }
+
+    .hero-visual-card img {
+        min-height: 220px;
+        border-radius: 18px;
+    }
+
+    .hero-control.carousel-control-prev {
+        left: 10px;
+    }
+
+    .hero-control.carousel-control-next {
+        right: 10px;
+    }
+
+    .hero-control-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .hero-indicators {
+        bottom: 22px;
+    }
+
+    .hero-indicators .active {
+        width: 30px;
+    }
+
+    .section-heading h2,
+    .about-copy h2,
+    .promo-banner h2 {
+        font-size: 30px;
+    }
+
+    .inner-hero {
+        padding: 28px 0 34px;
+    }
+
+    .inner-hero .container {
+        padding: 28px 18px;
+        border-radius: 24px;
+    }
+
+    .about-copy,
+    .panel-copy,
+    .contact-card,
+    .contact-form-card {
+        padding: 20px 16px;
+    }
+
+    .promo-banner {
+        padding: 22px 18px;
+        border-radius: 24px;
+    }
+
+    .promo-banner img,
+    .gallery-grid img,
+    .gallery-page-grid img,
+    .panel-media img,
+    .about-media img {
+        height: 190px;
+        border-radius: 18px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .stat-card strong {
+        font-size: 38px;
+    }
+
+    .review-meta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-list div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-grid input,
+    .form-grid textarea {
+        padding: 12px 14px;
+        border-radius: 14px;
+    }
+
+    .service-strip-grid div {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 150px;
+        margin-inline: auto;
+    }
+
+    .floating-actions a {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+}

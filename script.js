@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '<button class="lightbox-close" type="button" aria-label="Close image preview"><i class="fa-solid fa-xmark"></i></button>' +
         '<img class="lightbox-image" alt="Expanded gallery image">' +
         '</div>';
-
+ 
     document.body.appendChild(lightbox);
 
     var lightboxImage = lightbox.querySelector('.lightbox-image');

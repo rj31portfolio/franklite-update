@@ -30,6 +30,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .product-track .product-card {
+        flex-basis: calc((100% - 22px) / 2);
+    }
+
     .reels-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -196,6 +200,10 @@
 @media (max-width: 767px) {
     .container {
         width: min(100% - 24px, 100%);
+    }
+
+    .product-track .product-card {
+        flex-basis: 100%;
     }
 
     .feature-pills {

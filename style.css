@@ -878,6 +878,50 @@ video {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.trending-carousel {
+    overflow: hidden;
+    padding: 2px 0 12px;
+}
+
+.product-track {
+    display: flex;
+    gap: 22px;
+    transition: transform 0.55s ease;
+    will-change: transform;
+}
+
+.product-track .product-card {
+    flex: 0 0 calc((100% - 44px) / 3);
+    min-width: 0;
+}
+
+.product-carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.product-carousel-control {
+    display: inline-grid;
+    width: 46px;
+    height: 46px;
+    place-items: center;
+    border: 1px solid rgba(31, 42, 122, 0.12);
+    border-radius: 50%;
+    color: var(--primary);
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(31, 42, 122, 0.12);
+    transition: transform 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.product-carousel-control:hover,
+.product-carousel-control:focus-visible {
+    color: #fff;
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
 .shop-grid {
     grid-template-columns: repeat(4, 1fr);
 }

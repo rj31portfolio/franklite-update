@@ -3,6 +3,87 @@ if (typeof AOS !== 'undefined') {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    var productCarousel = document.querySelector('[data-product-carousel]');
+
+    if (productCarousel) {
+        var productTrack = productCarousel.querySelector('.product-track');
+        var productCards = productTrack.querySelectorAll('.product-card');
+        var previousButton = productCarousel.querySelector('[data-product-carousel-prev]');
+        var nextButton = productCarousel.querySelector('[data-product-carousel-next]');
+        var carouselOffset = 0;
+        var autoplayTimer;
+        var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        function getSlideWidth() {
+            var firstCard = productCards[0];
+            var trackStyles = window.getComputedStyle(productTrack);
+            return firstCard.getBoundingClientRect().width + parseFloat(trackStyles.gap || 0);
+        }
+
+        function getMaximumOffset() {
+            return Math.max(0, productTrack.scrollWidth - productCarousel.clientWidth);
+        }
+
+        function updateCarousel() {
+            carouselOffset = Math.min(carouselOffset, getMaximumOffset());
+            productTrack.style.transform = 'translateX(-' + carouselOffset + 'px)';
+        }
+
+        function moveCarousel(direction) {
+            var slideWidth = getSlideWidth();
+            var maximumOffset = getMaximumOffset();
+            var nextOffset = carouselOffset + (direction * slideWidth);
+
+            if (nextOffset > maximumOffset + 1) {
+                carouselOffset = 0;
+            } else if (nextOffset < 0) {
+                carouselOffset = maximumOffset;
+            } else {
+                carouselOffset = nextOffset;
+            }
+
+            updateCarousel();
+        }
+
+        function stopAutoplay() {
+            window.clearInterval(autoplayTimer);
+        }
+
+        function startAutoplay() {
+            if (reducedMotion || productCards.length < 2) {
+                return;
+            }
+
+            stopAutoplay();
+            autoplayTimer = window.setInterval(function () {
+                moveCarousel(1);
+            }, 4500);
+        }
+
+        previousButton.addEventListener('click', function () {
+            moveCarousel(-1);
+            startAutoplay();
+        });
+
+        nextButton.addEventListener('click', function () {
+            moveCarousel(1);
+            startAutoplay();
+        });
+
+        productCarousel.addEventListener('mouseenter', stopAutoplay);
+        productCarousel.addEventListener('mouseleave', startAutoplay);
+        productCarousel.addEventListener('focusin', stopAutoplay);
+        productCarousel.addEventListener('focusout', function (event) {
+            if (!productCarousel.contains(event.relatedTarget)) {
+                startAutoplay();
+            }
+        });
+
+        window.addEventListener('resize', updateCarousel);
+        updateCarousel();
+        startAutoplay();
+    }
+
     var reels = document.querySelectorAll('.reel-video');
     var galleryImages = document.querySelectorAll('.gallery-grid img, .gallery-page-grid img');
 

@@ -633,6 +633,15 @@
         text-align: center;
     }
 
+    .contact-list .contact-phone-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-phone-grid a {
+        align-items: center;
+        text-align: left;
+    }
+
     .form-grid input,
     .form-grid textarea {
         padding: 12px 14px;

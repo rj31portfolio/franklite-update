@@ -1582,6 +1582,46 @@ video {
     margin-top: 4px;
 }
 
+.contact-list .contact-phone-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.contact-phone-grid a {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid rgba(31, 42, 122, 0.08);
+    border-radius: 16px;
+    color: var(--muted);
+    background: #fff8fc;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-phone-grid a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(31, 42, 122, 0.1);
+}
+
+.contact-phone-grid i {
+    flex: 0 0 auto;
+}
+
+.contact-phone-grid span {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.contact-phone-grid strong {
+    color: var(--primary);
+    white-space: nowrap;
+}
+
 .form-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1780,6 +1820,32 @@ video {
 
 .site-footer p {
     line-height: 1.8;
+}
+
+.footer-contact-numbers {
+    display: grid;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.footer-contact-numbers a {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.footer-contact-numbers a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.footer-contact-numbers span {
+    color: #fff;
+    font-weight: 600;
 }
 
 .site-footer ul {

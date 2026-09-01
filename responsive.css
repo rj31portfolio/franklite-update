@@ -674,6 +674,11 @@
     }
 }
 
+/* Keep image-only hero banners at their natural aspect ratio on all screens. */
+.hero-slide {
+    min-height: 0;
+}
+
 @media (max-width: 991px) {
     .hero-slide,
     .hero-slide-inner {
@@ -769,4 +774,9 @@
         min-height: 240px;
         padding: 22px 16px;
     }
+}
+
+/* Overrides legacy text-hero heights for the image-only homepage carousel. */
+.hero-slide {
+    min-height: 0;
 }

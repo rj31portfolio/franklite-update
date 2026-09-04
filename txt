@@ -13,3 +13,35 @@
 *Pending From Client / Team:*- 1 call to medeyra for product 
 *Google Ads* - 3 times makes google ad skypetshop
 
+on home page show only 3 category Rideon, Baby Pedal Bikes , Baby Bikes EV  
+
+in ride on catgory product 
+JIMNY
+FERRARI
+CITY BIKE
+PANDA BAZUKA
+SHERA BAZUKA
+
+in Baby Pedal Bikes 
+GTR
+SNIPER
+PUSHA
+TARZAN
+DUKE
+PANTHER
+ROWDY
+PUSHA RAAJ
+DION
+
+in Baby Bikes EV  
+BMW EV
+DOLLER EV
+ANGRY BIRD EV
+
+that product show in difrent page whan click on that catgory wise show product dont show all so make thai and catgory make clicable 
+
+one page also make shop man page its show 3 catgory show and left side make filter for that with also all button 
+
+on index page in trending product slider first show ev bike product than padle bike product than ride on product in loop show slider 
+
+ 

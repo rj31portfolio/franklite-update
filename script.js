@@ -3,6 +3,99 @@ if (typeof AOS !== 'undefined') {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    var categoryProductsGrid = document.querySelector('[data-category-products]');
+
+    if (categoryProductsGrid) {
+        var categories = {
+            rideon: {
+                name: 'Rideon',
+                description: 'Explore our Rideon collection for little explorers.',
+                image: 'image/prod-1.png',
+                products: [
+                    ['JIMNY', 'image/rideon/1.png'],
+                    ['FERRARI', 'image/rideon/2.png'],
+                    ['CITY BIKE', 'image/rideon/3.png'],
+                    ['PANDA BAZUKA', 'image/rideon/4.png'],
+                    ['SHERA BAZUKA', 'image/rideon/5.png']
+                ]
+            },
+            'baby-pedal-bikes': {
+                name: 'Baby Pedal Bikes',
+                description: 'Discover fun pedal bikes made for young riders.',
+                image: 'image/padelbike.png',
+                products: [
+                    ['GTR', 'image/peddlebike/GTR.png'],
+                    ['SNIPER', 'image/peddlebike/sniper.png'],
+                    ['PUSHA RAAJ', 'image/peddlebike/pushpa.png'],
+                    ['TARZAN', 'image/peddlebike/Tarzan.png'],
+                    ['DUKE', 'image/peddlebike/duke.png'],
+                    ['PANTHER', 'image/peddlebike/panther.png'],
+                    ['ROWDY', 'image/peddlebike/Rowdy.png'],
+                    ['PUSHA', 'image/peddlebike/Pusha.png'],
+                    ['DON', 'image/peddlebike/Don.png'],
+                ]
+            },
+            'baby-bikes-ev': {
+                name: 'Baby Bikes EV',
+                description: 'Explore electric bikes designed for little adventures.',
+                image: 'image/dollerbikenew.png',
+                products: [
+                    ['BMW EV', 'image/evbike/18.png'],
+                    ['DOLLER EV', 'image/evbike/17.png'],
+                    ['ANGRY BIRD EV', 'image/evbike/18.png'],
+                    ['ANGRY BIRD EV', 'image/evbike/']
+                ]
+            }
+        };
+        var categoryKey = new URLSearchParams(window.location.search).get('category');
+        var selectedCategoryKey = categories[categoryKey] ? categoryKey : 'all';
+        var selectedCategory = categories[selectedCategoryKey];
+        var categoryTitle = document.querySelector('[data-category-title]');
+        var heroTitle = document.querySelector('[data-category-hero-title]');
+        var heroDescription = document.querySelector('[data-category-hero-description]');
+        var categoryKicker = document.querySelector('[data-category-kicker]');
+        var categoryFilters = document.querySelector('[data-category-filters]');
+        var products = [];
+
+        if (selectedCategory) {
+            document.title = selectedCategory.name + ' | Franklite';
+            categoryTitle.textContent = selectedCategory.name + ' Products';
+            heroTitle.textContent = selectedCategory.name;
+            heroDescription.textContent = selectedCategory.description;
+            categoryKicker.textContent = selectedCategory.name;
+            products = selectedCategory.products;
+        } else {
+            document.title = 'Shop | Franklite';
+            heroTitle.textContent = 'Find Their Next Adventure';
+            heroDescription.textContent = 'Choose a category to find the perfect ride for every little explorer.';
+            products = Object.keys(categories).reduce(function (allProducts, key) {
+                return allProducts.concat(categories[key].products);
+            }, []);
+        }
+
+        categoryFilters.insertAdjacentHTML('beforeend',
+            '<a class="shop-filter-link' + (selectedCategoryKey === 'all' ? ' is-active' : '') + '" href="shop.html">All</a>');
+
+        Object.keys(categories).forEach(function (key) {
+            var category = categories[key];
+            categoryFilters.insertAdjacentHTML('beforeend',
+                '<a class="shop-filter-link' + (selectedCategoryKey === key ? ' is-active' : '') + '" href="shop.html?category=' + key + '">' + category.name + '</a>');
+        });
+
+        products.forEach(function (product) {
+            var productName = product[0];
+            var productImage = product[1];
+            var enquiryText = encodeURIComponent('Hello, I want to enquire about ' + productName + '.');
+
+            categoryProductsGrid.insertAdjacentHTML('beforeend',
+                '<article class="product-card">' +
+                '<img src="' + productImage + '" alt="' + productName + '">' +
+                '<h3>' + productName + '</h3>' +
+                '<div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=' + enquiryText + '" target="_blank" rel="noopener noreferrer">Enquiry</a></div>' +
+                '</article>');
+        });
+    }
+
     var productCarousel = document.querySelector('[data-product-carousel]');
 
     if (productCarousel) {

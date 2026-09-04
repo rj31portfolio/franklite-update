@@ -88,30 +88,24 @@
             <section class="inner-hero">
                 <div class="container">
                     <span class="kicker">Product Collection</span>
-                    <h1>Ride-On Toys For Every Little Explorer</h1>
-                    <p>Browse featured Franklite bikes, trikes, quads and walkers with a cleaner catalog layout.</p>
+                    <h1 data-category-hero-title>Find Their Next Adventure</h1>
+                    <p data-category-hero-description>Choose a category to find the perfect ride for every little explorer.</p>
                 </div>
             </section>
 
             <section class="section-space pt-0">
-                <div class="container">
+                <div class="container shop-catalog-layout">
+                    <aside class="shop-filter" aria-label="Filter products by category">
+                        <span class="kicker">Filter</span>
+                        <h2>Categories</h2>
+                        <nav class="shop-filter-list" data-category-filters></nav>
+                    </aside>
+                    <div class="shop-products-panel">
                     <div class="section-heading">
-                        <span class="kicker">Shop</span>
-                        <h2>Featured Products</h2>
+                        <span class="kicker" data-category-kicker>Shop</span>
+                        <h2 data-category-title>All Products</h2>
                     </div>
-                    <div class="product-grid shop-grid">
-                        <article class="product-card"><img src="image/product-1.png" alt="Panther"><h3>Panther</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Panther." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product-2.png" alt="Bazuka"><h3>Bazuka</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Bazuka." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product-3.png" alt="Rowdy"><h3>Rowdy</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Rowdy." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product-4.png" alt="Tricycle"><h3>Tricycle</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Tricycle." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product-5.png" alt="Minni Boomer"><h3>Minni Boomer</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Minni%20Boomer." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product-6.png" alt="Duke"><h3>Duke</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Duke." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product-7.png" alt="City Bike"><h3>City Bike</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20City%20Bike." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product/kidstry-1.png" alt="Kids trike"><h3>Kids Trike</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Kids%20Trike." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product/tryumbrella-1.png" alt="Umbrella trike"><h3>Umbrella Trike</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Umbrella%20Trike." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product/tryseatsupport-1.png" alt="Support trike"><h3>Support Trike</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Support%20Trike." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product/trycyle-1.png" alt="Classic tricycle"><h3>Classic Tricycle</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Classic%20Tricycle." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
-                        <article class="product-card"><img src="image/product/tryseat-1.png" alt="Seat trike"><h3>Seat Trike</h3><div class="product-actions"><a class="btn theme-btn enquiry-btn" href="https://wa.me/917428900713?text=Hello%2C%20I%20want%20to%20enquire%20about%20Seat%20Trike." target="_blank" rel="noopener noreferrer">Enquiry</a></div></article>
+                    <div class="product-grid shop-grid" data-category-products></div>
                     </div>
                 </div>
             </section>
@@ -152,7 +146,7 @@
                         <h3>Customer Service</h3>
                         <ul>
                             <li><a href="contact.html">Help Center</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
                         </ul>
                     </div>
                     <div>

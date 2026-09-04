@@ -56,6 +56,26 @@
     .event-timeline {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .shop-catalog-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .terms-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .terms-delivery-card {
+        position: static;
+    }
+
+    .shop-filter {
+        position: static;
+    }
+
+    .shop-filter-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 991px) {
@@ -307,6 +327,10 @@
         grid-template-columns: 1fr;
     }
 
+    .shop-filter-list {
+        grid-template-columns: 1fr;
+    }
+
     .hero-badges,
     .hero-actions,
     .hero-mini-strip,
@@ -373,6 +397,7 @@
 
     .gallery-page-grid img,
     .panel-media img,
+    .panel-media video,
     .about-media img,
     .promo-banner img {
         min-height: 0;
@@ -600,6 +625,7 @@
     .gallery-grid img,
     .gallery-page-grid img,
     .panel-media img,
+    .panel-media video,
     .about-media img,
     .events-spotlight-card img,
     .event-highlight-media img,

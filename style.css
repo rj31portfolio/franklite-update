@@ -1331,8 +1331,51 @@ video {
     max-width: 430px;
 }
 
+.promo-offer-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    padding: 7px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.promo-offer-label i {
+    color: #ffe16d;
+}
+
 .promo-banner p {
     color: rgba(255, 255, 255, 0.84);
+}
+
+.promo-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.promo-highlights span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 13px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.promo-highlights i {
+    color: #ffe16d;
 }
 
 .reels-grid {

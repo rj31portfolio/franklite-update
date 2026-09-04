@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     ['BMW EV', 'image/evbike/18.png'],
                     ['DOLLER EV', 'image/evbike/17.png'],
                     ['ANGRY BIRD EV', 'image/evbike/18.png'],
-                    ['ANGRY BIRD EV', 'image/evbike/']
+                    ['TRUMP EV', 'image/evbike/20.png']
                 ]
             }
         };

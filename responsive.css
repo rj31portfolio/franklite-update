@@ -1,4 +1,8 @@
 @media (max-width: 1199px) {
+    .assurance-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .feature-pills {
         justify-content: flex-start;
     }
@@ -399,6 +403,7 @@
     .panel-media img,
     .panel-media video,
     .about-media img,
+    .about-media video,
     .promo-banner img {
         min-height: 0;
         height: 220px;
@@ -627,6 +632,7 @@
     .panel-media img,
     .panel-media video,
     .about-media img,
+    .about-media video,
     .events-spotlight-card img,
     .event-highlight-media img,
     .event-card img {
